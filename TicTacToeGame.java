@@ -3,13 +3,13 @@ public class TicTacToeGame {
 
 	public char Player, Computer;
 
-/*    public void boardCreation() {
+    public void boardCreation() {
         char[] board= new char[9];
         for(int i=1;i<9;i++)
         {
-            System.out.println("");
+            board[i] = ' ';
         }
-    }*/
+    }
 
     public void xorO() {
 
@@ -43,15 +43,11 @@ public class TicTacToeGame {
     }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
         System.out.println("...wlcm to tic tac toe game...");
 
-        /*Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the choice 'o' or 'x'");
-        char choice = sc.next().charAt(0);*/
-
         TicTacToeGame ticTacToeGame = new TicTacToeGame();
-        //ticTacToeGame.boardCreation();
+        ticTacToeGame.boardCreation();
         ticTacToeGame.xorO();
         ticTacToeGame.showBoard();
 	}
